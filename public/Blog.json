@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "cover_img": "https://i.ibb.co/fpD9wD7/photo-1508873699372-7aeab60b44ab-ixlib-rb-4-0.jpg",
+    "author": "John Doe",
+    "author_img": "https://i.ibb.co/YL6w4fQ/premium-photo-1687832783320-35671afbf484-ixlib-rb-4-0.jpg",
+    "title": "Exploring the Fascinating Science of Learning",
+    "posted_date": "Sep 12 (2 days ago)",
+    "reading_time": "10 mins",
+    "hashtags": ["ScienceOfLearning", "EducationalScience", "Research"]
+  },
+  {
+    "id": "2",
+    "cover_img": "https://i.ibb.co/t8NW67j/photo-1457369804613-52c61a468e7d-ixlib-rb-4-0.jpg",
+    "author": "Jane Smith",
+    "author_img": "https://i.ibb.co/RyR598z/photo-1494790108377-be9c29b29330-ixlib-rb-4-0.jpg",
+    "title": "Diving Deep into Learning Methods",
+    "posted_date": "Sep 11 (3 days ago)",
+    "reading_time": "8 mins",
+    "hashtags": ["LearningMethods", "EducationalResearch", "Insights"]
+  },
+  {
+    "id": "3",
+    "cover_img": "https://i.ibb.co/k16H3CY/photo-1432821596592-e2c18b78144f-ixlib-rb-4-0.jpg",
+    "author": "Alex Johnson",
+    "author_img": "https://i.ibb.co/mvyKL85/photo-1500648767791-00dcc994a43e-ixlib-rb-4-0.jpg",
+    "title": "Unveiling the Science Behind Education",
+    "posted_date": "Sep 10 (4 days ago)",
+    "reading_time": "15 mins",
+    "hashtags": ["EducationalScience", "LearningTheory", "Pedagogy"]
+  },
+  {
+    "id": "4",
+    "cover_img": "https://i.ibb.co/kM3KYZ9/premium-photo-1684581214880-2043e5bc8b8b-ixlib-rb-4-0.jpg",
+    "author": "Emily Brown",
+    "author_img": "https://i.ibb.co/t8fsVx6/photo-1507003211169-0a1dd7228f2d-ixlib-rb-4-0.jpg",
+    "title": "Revolutionizing Learning Science with Innovations",
+    "posted_date": "Sep 09 (5 days ago)",
+    "reading_time": "12 mins",
+    "hashtags": ["LearningInnovations", "EducationalTechnology", "ScienceEducation"]
+  },
+  {
+    "id": "5",
+    "cover_img": "https://i.ibb.co/znsBzyk/photo-1554177255-61502b352de3-ixlib-rb-4-0.jpg",
+    "author": "David Wilson",
+    "author_img": "https://i.ibb.co/PGjVQ7r/photo-1544723795-3fb6469f5b39-ixlib-rb-4-0.jpg",
+    "title": "Embarking on Scientific Adventures in Learning",
+    "posted_date": "Sep 08 (6 days ago)",
+    "reading_time": "20 mins",
+    "hashtags": ["LearningAdventures", "Exploration", "EducationalJourney"]
+  }
+]
