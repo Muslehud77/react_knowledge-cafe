@@ -8,19 +8,31 @@ function App() {
   const [bookmarks,setBookmarks] = useState([])
 
     const handleBookmarks = (bookmark) =>{
-        console.log(bookmark)
-        const newBookmarks = [...bookmarks,bookmark]
+     
+        const newBookmarks = [...bookmarks,bookmark]   
         setBookmarks(newBookmarks)
+       
+  
+  }
+
+
+     const [readTime,setReadTime] = useState([])
+
+    const handleRead = (time,id) =>{
+      const newBookmarks = bookmarks.filter(bookmark => bookmark.id !== id)
+      setBookmarks(newBookmarks)
+      const newReadTime = [...readTime, time.replace('mins','') ]
+      setReadTime(newReadTime)
     }
 
   return (
     <>
      
-   <div className='max-w-7xl mx-auto'>
+   <div className='max-w-6xl mx-auto'>
       <Header></Header>
      <div className='md:flex gap-2'>
-      <Blogs handleBookmarks={handleBookmarks}></Blogs>
-      <Bookmarks bookmarks={bookmarks}></Bookmarks>
+      <Blogs handleRead={handleRead} handleBookmarks={handleBookmarks}></Blogs>
+      <Bookmarks readTime={readTime} bookmarks={bookmarks}></Bookmarks>
      </div>
    </div>
       

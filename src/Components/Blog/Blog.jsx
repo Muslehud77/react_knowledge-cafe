@@ -1,9 +1,25 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { FaBookmark } from 'react-icons/fa';
 
 
-const Blog = ({blog,handleBookmarks}) => {
-const {title,cover_img,author,author_img,posted_date,reading_time,hashtags} = blog
+const Blog = ({blog,handleBookmarks,handleRead}) => {
+const {title,cover_img,author,author_img,posted_date,reading_time,hashtags,id} = blog
+
+
+
+
+const [bookmarked,setBookmarked] = useState(false)
+const setBookmark = (status) =>{
+    if(!status){
+        setBookmarked(false)
+    }
+    else{
+        setBookmarked(!bookmarked)
+    }
+}
+
+
     return (
         <div className='space-y-4 border-b-2 pb-5'>
             <img src={cover_img} className='rounded-md' alt={`title: ${title}`} />
@@ -20,7 +36,12 @@ const {title,cover_img,author,author_img,posted_date,reading_time,hashtags} = bl
                 </div>
                 <div className='flex items-center pb-10 gap-2'> 
                     <span>{reading_time} read</span>
-                    <button onClick={()=>{handleBookmarks(title)}}><FaBookmark></FaBookmark></button>
+                    
+                    {
+                        bookmarked ? 'Already Bookmarked' : <button onClick={()=>{handleBookmarks(blog);setBookmark(1)}}><FaBookmark></FaBookmark></button>
+                    }
+                
+                   
                 </div>
 
             </div>
@@ -31,12 +52,14 @@ const {title,cover_img,author,author_img,posted_date,reading_time,hashtags} = bl
 
                 }
             </p>
-            <a className='text-blue-700 underline' href="">Mark as read</a>
+            <a onClick={()=>{handleRead(reading_time,id);setBookmark(false)}} className='text-blue-700 underline hover:cursor-pointer' >Mark as read</a>
         </div>
     );
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookmarks: PropTypes.func.isRequired,
+    handleRead: PropTypes.func.isRequired
 }
 export default Blog;
